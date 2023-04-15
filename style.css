@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+html,
+body {
+    font-family: "Montserrat", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+header h1, footer p {
+    text-align: center;
+}
+
+#user-management {
+    display: grid;
+    justify-content: center;
+    gap: 2rem;
+    grid-template-columns: min(18rem, 33%) min(18rem, 33%) min(24rem, 33%);
+}
+
+#user-management section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 1235px) {
+    #user-management {
+        grid-template-columns: min(18rem, 33%) min(18rem, 33%);
+    }
+
+    #user-management article {
+        grid-column: 1 / -1;
+    }
+}
