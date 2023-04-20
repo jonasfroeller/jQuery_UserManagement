@@ -47,8 +47,10 @@
         <article>
             <h2>Benutzer Liste</h2>
             <hr>
-            <table id="users-table">
-            </table>
+            <div style="overflow:auto;">
+                <table id="users-table">
+                </table>
+            </div>
         </article>
     </main>
 
